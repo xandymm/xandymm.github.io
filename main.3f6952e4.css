@@ -5172,6 +5172,7 @@ textarea {
 	margin-right: 5px;
 }
 
+/* ============================== */
 .image {
 	display: block;
 	max-width: 100%;
@@ -5186,4 +5187,34 @@ textarea {
 .section__content {
 	margin-inline: auto;
 	width: min(100%, 600px);
+}
+/* ============================== */
+.grid {
+	margin-inline: auto;
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.grid__item {
+	background: #f5f5f5;
+}
+
+.grid__image {
+	object-fit: contain;
+	max-width: 100%;
+	aspect-ratio: 4/3;
+	display: block;
+}
+
+.grid__image:hover {
+	scale: 1.2;
+}
+
+.linkbtn {
+	margin-top: 12px;
+	display: grid;
+	place-items: center;
+	height: 40px;
+	border: 1px solid blue;
 }
